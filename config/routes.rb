@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  namespace :users do
+  get 'omniauth_callbacks/google_oauth2'
+  end
+
   get 'home/index'
 
   get 'hello/index'
