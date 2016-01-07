@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   namespace :users do
-  get 'omniauth_callbacks/google_oauth2'
+    # Make sure this callback URL is set for Client ID on Google Developers Console.
+    get 'omniauth_callbacks/google_oauth2'
   end
 
   get 'home/index'
