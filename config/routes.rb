@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'callback/google_oauth2'
+  get '/auth/google_oauth2/callback' => 'callback#google_oauth2'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
