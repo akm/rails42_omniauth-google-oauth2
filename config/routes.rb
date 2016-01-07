@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   get 'hello/index'
 
-  devise_for :users
+  # devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   root to: "hello#index"
   
   # The priority is based upon order of creation: first created -> highest priority.
